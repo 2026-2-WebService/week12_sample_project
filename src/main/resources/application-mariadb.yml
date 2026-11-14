@@ -1,0 +1,9 @@
+# Run: SPRING_PROFILES_ACTIVE=mariadb DB_URL=jdbc:mariadb://HOST:3306/DB DB_USERNAME=... DB_PASSWORD=...
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:validate}
